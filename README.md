@@ -1,3 +1,7 @@
+## Demo : https://ocr-nextjs-test-vhxb.vercel.app/
+
+![Screenshot 2024-12-16 223604](https://github.com/user-attachments/assets/f7bf8b4e-0e7b-44e7-8e8d-abce746dc412)
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
