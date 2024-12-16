@@ -21,7 +21,6 @@ interface DetectedWord {
 export default function ImageOCR({ image }: ImageOCRProps) {
   const [ocrResult, setOcrResult] = useState<string>('')
   const [isProcessing, setIsProcessing] = useState(false)
-  const [detectedWords, setDetectedWords] = useState<DetectedWord[]>([])
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   const processImage = async () => {
@@ -31,7 +30,6 @@ export default function ImageOCR({ image }: ImageOCRProps) {
     try {
       const { data } = await worker.recognize(image)
       setOcrResult(data.text)
-      setDetectedWords(data.words)
       drawDetectedWords(data.words)
     } catch (error) {
       console.error('OCR Error:', error)

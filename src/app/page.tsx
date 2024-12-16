@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
-import ImageOCR from './components/ImageOCR'
+import ImageOCR from '@/components/ImageOCR'
 
 export default function Home() {
   const [image, setImage] = useState<File | null>(null)
